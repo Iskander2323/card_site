@@ -1,3 +1,5 @@
+import 'package:business_card_web/body/about_me.dart';
+import 'package:business_card_web/body/main_page.dart';
 import 'package:business_card_web/widgets/navbar.dart';
 import 'package:flutter/material.dart';
 
@@ -26,12 +28,12 @@ class HomePage extends StatelessWidget {
         color: Colors.black,
         child: Scaffold(
           backgroundColor: Colors.transparent,
-          body: SingleChildScrollView(
-            child: Column(
+          body: ListView(
               children: <Widget>[
                 NavBar(),
+                MainPage(),
+                AboutMe(),
               ],
-            ),
           ),
         ));
   }

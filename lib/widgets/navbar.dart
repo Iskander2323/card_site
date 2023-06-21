@@ -27,11 +27,13 @@ class NavBar extends StatelessWidget {
                 child: Center(
                   child: Text(
                     'Q',
-                    style: TextStyle(fontSize: 30, color: Colors.blue),
+                    style: TextStyle(
+                        fontFamily: 'CenturyGothic',
+                        fontSize: 40,
+                        color: Colors.white),
                   ),
                 ),
               ),
-              Text('Q')
             ],
           ),
           Container(
