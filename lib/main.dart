@@ -1,5 +1,8 @@
 import 'package:business_card_web/body/about_me.dart';
 import 'package:business_card_web/body/main_page.dart';
+import 'package:business_card_web/body/portfolio.dart';
+import 'package:business_card_web/body/resume.dart';
+import 'package:business_card_web/widgets/footer.dart';
 import 'package:business_card_web/widgets/navbar.dart';
 import 'package:flutter/material.dart';
 
@@ -29,11 +32,14 @@ class HomePage extends StatelessWidget {
         child: Scaffold(
           backgroundColor: Colors.transparent,
           body: ListView(
-              children: <Widget>[
-                NavBar(),
-                MainPage(),
-                AboutMe(),
-              ],
+            children: <Widget>[
+              NavBar(),
+              MainPage(),
+              AboutMe(),
+              Resume(),
+              Portfolio(),
+              Footer(),
+            ],
           ),
         ));
   }
